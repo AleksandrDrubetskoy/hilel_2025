@@ -37,7 +37,7 @@ print("")
 # task 03 ==
 """ Зробіть так, щоб у тексті було не більше одного пробілу між словами.
 """
-adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("   ", " ")
+adwentures_of_tom_sawer = " ".join(adwentures_of_tom_sawer.split())
 print(f"Task_03")
 print(adwentures_of_tom_sawer)
 print("")
@@ -65,7 +65,8 @@ print("")
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
 """
 print(f"Task_06")
-print(f"Position for second occurance of word \"Tom\" is {adwentures_of_tom_sawer.find("Tom", adwentures_of_tom_sawer.find("Tom") + 1)}")
+print(
+    f"Position for second occurance of word \"Tom\" is {adwentures_of_tom_sawer.find("Tom", adwentures_of_tom_sawer.find("Tom") + 1)}")
 print("")
 
 # task 07
@@ -106,11 +107,10 @@ print(f"Task_09")
 print(f"The number of sentences starts from \"By the time\" is {sum}")
 print("")
 
-
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
 string_fin = adwentures_of_tom_sawer_sentences[-1]
 print(f"Task_10")
-print(f"The number of words in last sentence is {string_fin.count(" ") + 1}")
+print(f"The number of words in last sentence is {len(string_fin.split())}")
 print("")
