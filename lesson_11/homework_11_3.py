@@ -41,3 +41,4 @@ if __name__ == "__main__":
     xml_path = "groups.xml"
     group_num = 2
     get_incoming_value(xml_path, group_num)
+

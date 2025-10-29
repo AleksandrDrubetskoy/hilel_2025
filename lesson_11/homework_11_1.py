@@ -24,3 +24,4 @@ with open(output_file, 'w', newline='', encoding='utf-8') as f:
 
 print(f"Done! The result is saved in a file: {output_file}")
 print(f"There were {len(data)} rows, after cleaning there were left {len(unique_data)}.")
+
