@@ -7,6 +7,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+
 def get_incoming_value(xml_file: str, group_number: int):
     """
     Searches for a <group> element with the given <number>
@@ -34,6 +35,12 @@ def get_incoming_value(xml_file: str, group_number: int):
         logging.error(f"Error parsing XML: {e}")
     except Exception as e:
         logging.error(f"Unexpected error: {e}")
+
+
+if __name__ == "__main__":
+    xml_path = "groups.xml"
+    group_num = 2
+    get_incoming_value(xml_path, group_num)
 
 # Пример использования:
 if __name__ == "__main__":

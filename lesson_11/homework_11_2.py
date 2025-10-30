@@ -17,6 +17,7 @@ files = [
     "login.json"
 ]
 
+
 def validate_json(file_path):
     try:
         with open(file_path, "r", encoding="utf-8") as f:
@@ -29,10 +30,13 @@ def validate_json(file_path):
         logging.error(f"{file_path} — error while reading: {e}")
         print(f"{file_path} — error while reading: {e}")
 
+
 if __name__ == "__main__":
     for file in files:
         if Path(file).exists():
             validate_json(file)
         else:
             logging.error(f"{file} — file not found")
+            print(f"{file} — file not found")
+
             print(f"{file} — file not found")
